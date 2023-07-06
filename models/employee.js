@@ -40,7 +40,7 @@ const employeeSchema = mongoose.Schema(
     },
     city: {
       type: String,
-      required: true,
+      required: false,
     },
     state: {
       type: String,
