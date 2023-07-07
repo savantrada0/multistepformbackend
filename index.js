@@ -12,13 +12,7 @@ const EmployeeRoute = require("./routes/employeeRoute");
 app.use(express.json());
 app.use(cors());
 
-app.use("/api/employees", EmployeeRoute);
-
-// app.use(express.static(path.join(__dirname, "./client/build")));
-
-// app.get("*", function (req, res) {
-//   res.sendFile(path.join(__dirname, "./client/build/index.html"));
-// });
+app.use("/", EmployeeRoute);
 
 const port = process.env.PORT || 5000;
 
